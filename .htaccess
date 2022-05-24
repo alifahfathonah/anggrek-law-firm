@@ -1,0 +1,42 @@
+RewriteEngine on
+
+
+
+
+
+
+RewriteCond $1 !^(index\.php)
+RewriteRule ^$ main.php?page=home [L]
+RewriteRule ^news/?$ main.php?page=berita [L]
+RewriteRule ^news-hal-([0-9]+)$ main.php?page=berita&pg=$1 [L]
+RewriteRule ^news/?(.*)$ main.php?page=detail-berita&id=$1 [L]
+RewriteRule ^recent-success-story/?$ main.php?page=recent [L]
+RewriteRule ^recent-success-story-hal-([0-9]+)$ main.php?page=recent&pg=$1 [L]
+RewriteRule ^recent-success-story/?(.*)$ main.php?page=detail-recent&id=$1 [L]
+RewriteRule ^about-us/?$ main.php?page=tentang-kami [L]
+RewriteRule ^our-team/?$ main.php?page=our-team [L]
+RewriteRule ^our-team/(.*)?$ main.php?page=detail-team&id=$1 [L]
+RewriteRule ^practice-area/?(.*)$ main.php?page=practice-area&seo=$1 [L]
+RewriteRule ^contact/?$ main.php?page=kontak [L]
+RewriteRule ^daftar-pelatihan/?$ main.php?page=daftar-seminar [L]
+RewriteRule ^our-founder/?$ main.php?page=pendiri-kami [L]
+RewriteRule ^journals/?$ main.php?page=publikasi [L]
+RewriteRule ^career/?(.*)$ main.php?page=carrier [L]
+RewriteRule ^karir-([0-9]+)-(.*)$ main.php?page=detail-carrier&id=$1 [L]
+RewriteRule ^legal-rubric/?$ main.php?page=rubrik-hukum [L]
+RewriteRule ^legal-rubric-hal-([0-9]+)$ main.php?page=rubrik-hukum&pg=$1 [L]
+RewriteRule ^legal-rubric/?(.*)$ main.php?page=detail-rubrik&id=$1 [L]
+RewriteRule ^code-overview/?$ main.php?page=code-overview [L]
+RewriteRule ^code-overview-hal-([0-9]+)$ main.php?page=code-overview&pg=$1 [L]
+RewriteRule ^code-overview/?(.*)$ main.php?page=detail-code&id=$1 [L]
+
+RewriteRule ^search$ search.php [L]
+
+Options All -Indexes
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

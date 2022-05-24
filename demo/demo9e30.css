@@ -1,0 +1,64 @@
+    #demo .portfolio-header .dark-overlay,
+#demo .parallax {
+    height: auto;
+}
+
+#demo .portfolio-header .dark-overlay {
+    padding-top: 100px;
+}
+
+#demo .portfolio-header .dark-overlay h1 {
+    font-size: 55px;
+    letter-spacing: -0.3px;
+}
+
+#demo .portfolio-header .dark-overlay h2 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+#demo .thescreens {
+    transition: 0.2s ease-in-out;
+    position: relative;
+    top: 0;
+}
+
+#demo .thescreens:hover {
+    position: relative;
+    top: -10px;
+}
+
+
+.flexme{
+    display:flex;
+    flex-wrap: wrap;
+    max-width:1170px;
+
+    margin:auto;
+    padding-left:45px;
+    padding-right:45px;
+
+}
+
+.flexme a{
+      width:30.333333%;
+      padding-left:35px;
+      padding-right:35px;
+      padding-top:60px;
+      margin:auto;
+}
+
+@media all and (max-width: 768px) {
+    #demo .thescreens img {
+        margin: auto;
+    }
+
+
+.flexme a{
+      width:100%;
+}
+
+
+
+}
+

